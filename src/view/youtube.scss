@@ -1,0 +1,101 @@
+
+.youtube-container{
+    .yt-search{
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 32.3%;
+        background-color: #0f0f0f;
+        padding: 8px 0;
+
+    }
+    input{
+        display: flex;
+        outline: none;
+        min-width: 500px;
+        padding: 5px 15px;
+        background-color: #121212;
+        border: #5e5e5e 1px solid;
+        border-radius: 30px;
+        color: white;
+        @media only screen and (max-width: 600px){   //responsive 
+            min-width: 400px;
+        }
+    }
+    .ic1{
+        transform: translateX(-60px);
+        padding-top: 17px;
+        border: none;
+        background-color: transparent;  
+        color: white;
+        cursor: pointer;
+    }
+    .ic1:hover{
+        color: red;
+    }
+    .ic2{
+        outline: none;
+        padding-top: 16px;
+        cursor: pointer;
+        transform: translateX(-17px); 
+        background: transparent;
+        border: none;
+        color: white;
+        transform: translateX(-45px);
+    }
+    .ic2:hover{
+        color: red;
+    }
+    .yt-result{
+        display: inline-flex;
+        width: 100%;
+        padding: 50px 100px 0px 100px;
+        margin-top: 50px;
+        @media only screen and (max-width: 600px){   //responsive 
+            :nth-child(1){
+                margin-top: 15px;
+            }
+            padding:  0px 5px;
+        }
+        
+
+        .left{
+            width: 30%;
+            border-radius: 3px;
+            
+            .iframe{
+                width: 100%;
+                height: 250px;
+                border-radius: 10px;
+            }
+            .iframe:hover{
+                border-radius: 0;
+                transition: all 0.5s ease;//chuyển động mượt
+            }
+            @media only screen and (max-width: 600px){   //responsive 
+                width: 50%;
+            }
+
+        }
+        .right{
+            width: 70%;
+            padding: 5px 10px;
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            @media only screen and (max-width: 600px){   //responsive 
+                gap: 30px;
+                padding: 15px 10px;
+            }
+
+            .title{
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+    }
+}
